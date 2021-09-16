@@ -1,0 +1,108 @@
+.container {
+  padding: 0 20px;
+  .textBox {
+    padding: 30px 0;
+    p:nth-child(2) {
+      margin: 30px 0;
+    }
+    .title {
+      font-size: 20px;
+    }
+  }
+
+  .itemBox {
+    div {
+      display: inline-block;
+      width: 40%;
+      font-size: 14px;
+      color: #FFFFFF;
+      background: rgba(228, 228, 228, 1);
+      padding: 8px 0 8px 8px;
+      position: relative;
+      .icon {
+        color: rgba(228, 228, 228, 1);
+        display: inline-block;
+        position: absolute;
+        right: 1px;
+        top: 1px;
+        width: 30px;
+        height: e("calc(100% - 2px)");
+        background: #FFFFFF;
+      }
+    }
+    .isActive {
+      background: rgba(95,184,120,1);
+      .icon {
+        color: rgba(95,184,120,1);
+      }
+    }
+  }
+  .datePickerBox {
+    margin-top: 30px;
+    :global {
+      .am-list-item {
+        padding: 0;
+      }
+      .am-list-item.am-list-item-middle .am-list-line {
+        border: 1px solid rgba(228, 228, 228, 1);
+        padding: 0;
+        margin: 20px 0;
+      }
+      .am-list-item .am-list-line .am-list-extra {
+        font-size: 14px;
+        color: rgba(52,52,52,1);
+        flex-basis: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .otherInfo {
+    :global {
+      .am-list-item:not(:last-child) .am-list-line::after {
+        height: 0;
+      }
+      .am-list-item.am-input-item {
+        border: 1px solid rgba(228,228,228,1);
+        color: rgba(52,52,52,1);
+        min-height: 35px;
+        height: 35px;
+        margin: 10px 0 10px 0;
+        padding-left: 0;
+      }
+      .am-list-item.am-list-item-middle .am-list-line {
+        padding-right: 0;
+      }
+      .am-list-item .am-input-control input {
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+  }
+  .btnBox {
+    display: flex;
+    :global {
+      .am-button {
+        border: 1px solid rgba(228, 228, 228, 1);
+        line-height: 40px;
+        height: 40px;
+        border-radius: 40px;
+        font-size: 14px;
+        margin: 30px 0;
+        &::before {
+          border: 0;
+        }
+      }
+    }
+  }
+  .footer {
+    text-align: center;
+    &::after {
+      content: '';
+    }
+  }
+  .blank {
+    height: 30px;
+    width: 100%;
+  }
+
+}

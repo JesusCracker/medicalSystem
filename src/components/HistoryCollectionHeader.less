@@ -1,0 +1,41 @@
+.stepBox {
+  padding: 10px 12px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  li {
+    width: calc((75vw - 24px)/10);
+    height: calc((75vw - 24px)/10);
+    line-height: calc((75vw - 24px)/10);
+    border: 1px solid rgba(231,231,231,1);
+    text-decoration: none;
+    border-radius: 50%;
+    text-align: center;
+    list-style: none;
+    a {
+      color: rgba(231,231,231,1);
+    }
+  }
+  .done {
+    background: rgba(0,153,255,1);
+    border: 1px solid #FFFFFF;
+    a {
+      color: #FFFFFF;
+    }
+  }
+  .active {
+    border: 1px solid rgba(0,153,255,1);
+    a {
+      color: rgba(0,153,255,1)
+    }
+  }
+}
+.text {
+  border: 1px solid rgba(0,153,255,1);
+  color: rgba(0,153,255,1);
+  padding: 8px 0;
+  margin: 0 12px;
+  font-size: 14px;
+  text-align: center;
+}

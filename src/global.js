@@ -1,0 +1,1 @@
+export const imgUrlPath = 'http://www.aisono.cn/medicalHistoryFile';

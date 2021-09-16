@@ -1,0 +1,74 @@
+:global {
+  .am-card-header {
+    font-size: 14px;
+    .am-card-header-content {
+      color: rgba(204,204,204,1);
+    }
+    .am-card-header-extra {
+      flex: 0;
+    }
+  }
+}
+
+.tag {
+  display: inline-block;
+  margin-left: 8px;
+  text-align: center;
+  padding: 2px 5px;
+  background: rgba(30,159,255,1);
+  color: #fff;
+  font-size: 12px;
+}
+.posted {
+  display: inline-block;
+  margin-left: 8px;
+  text-align: center;
+  padding: 2px 5px;
+  font-size: 12px;
+  background-color: rgba(238,238,238,1);
+  color: rgba(52,52,52,1);
+}
+
+.row {
+  margin-bottom: 5px;
+  .label {
+    vertical-align: top;
+    display: inline-block;
+    width: 79px;
+    color: #999;
+  }
+  .content {
+    display: inline-block;
+    width:e("calc(100% - 79px)");
+  }
+}
+
+.itemBox {
+  div {
+    display: inline-block;
+    width: 48%;
+    margin: 5px 1%;
+    font-size: 14px;
+    color: #FFFFFF;
+    background: rgba(228, 228, 228, 1);
+    padding: 2px 0 2px 3px ;
+    position: relative;
+    .icon {
+      color: rgba(228, 228, 228, 1);
+      display: inline-block;
+      position: absolute;
+      right: 1px;
+      top: 1px;
+      width: 20px;
+      height: e("calc(100% - 2px)");
+      background: #FFFFFF;
+    }
+  }
+  .isActive {
+    background: rgba(95,184,120,1);
+    .icon {
+      color: rgba(95,184,120,1);
+    }
+  }
+}
+
